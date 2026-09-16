@@ -1,0 +1,13 @@
+# Packaged builds (published as release assets instead)
+*.zip
+dist/
+
+# OS cruft
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
+*.swp

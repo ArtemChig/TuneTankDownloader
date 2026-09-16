@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>TuneTank Downloader</title>
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+      body {
+        width: 260px;
+        margin: 0;
+        padding: 14px;
+        background: #17181c;
+        color: #e8e8ea;
+        font: 13px/1.45 ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+      }
+      h1 {
+        margin: 0 0 10px;
+        font-size: 13px;
+        font-weight: 600;
+        color: #ffcc00;
+      }
+      #status {
+        margin-bottom: 12px;
+        color: #a2a2ab;
+      }
+      button {
+        width: 100%;
+        padding: 8px 10px;
+        border: 0;
+        border-radius: 8px;
+        background: #ffcc00;
+        color: #1a1a1a;
+        font: inherit;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      button:disabled {
+        background: #35363c;
+        color: #8a8a93;
+        cursor: default;
+      }
+      label {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        margin-top: 12px;
+        color: #a2a2ab;
+      }
+      #result {
+        margin-top: 10px;
+        white-space: pre-wrap;
+        color: #a2a2ab;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>TuneTank Downloader</h1>
+    <div id="status">Checking this page...</div>
+    <button id="all" disabled>Download all on this page</button>
+    <label><input type="checkbox" id="subfolder" /> Save into a TuneTank/ folder</label>
+    <div id="result"></div>
+    <script src="popup.js"></script>
+  </body>
+</html>
